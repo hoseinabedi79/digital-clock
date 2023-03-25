@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<!-- start code -->
+<body>
+    <div class="container">
+    <!-- digital clock -->
+    <div class="clock">
+        <div class="hour"></div>
+        <span>:</span>
+        <div class="minutes"></div>
+        <span>:</span>
+        <div class="second"></div>
+    </div>
+    <!-- Set the clock -->
+    <div class="reading">
+        <h2>The clock is set</h2>
+        <p></p>
+        :
+        <p></p>
+        :
+        <p></p>
+    </div>
+    <!-- alert -->
+    <div class="alert">
+        <button class="alert-btn" onclick="openBox(true)">Alarm setting</button>
+    </div>
+    <!-- form inputs -->
+    <div class="textFlid">
+        <form action="post">
+            <input type="number" class="hour-input" placeholder="hour">
+            <input type="number" class="minutes-input" placeholder="minutes">
+            <input type="number" class="second-input" placeholder="second">
+            <input type="button" value="tuning" class="sucses" onclick="sucsesClick(true)">
+            <input type="button" value="repeal" class="error"  onclick="openBox(false)">
+        </form>
+    </div>
+    <!-- box Propertys -->
+    <div class="warning">
+        <div class="box-off">
+            <div class="box-buttons">
+                <button class="finish hover-common" onclick="finish()">I woke up</button>
+                <button class="continuation hover-common" onclick="continuation()">10 more minutes</button>
+            </div>
+            <span class="second-timer">
+                
+            </span>
+        </div>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
